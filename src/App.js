@@ -98,54 +98,6 @@ function App() {
             }
           />
         </Route>
-
-        {/* blogPage */}
-        <Route path="blog">
-          <Route
-            index
-            element={
-              <React.Suspense
-                fallback={
-                  <div>
-                    <Spiner />
-                  </div>
-                }
-              >
-                <BlogPage />
-              </React.Suspense>
-            }
-          // />
-          // <Route element={<ProtectedRoute />}>
-          //   <Route
-          //     path="createblog"
-          //     element={
-          //       <React.Suspense
-          //         fallback={
-          //           <div>
-          //             <Spiner />
-          //           </div>
-          //         }
-          //       >
-          //         <CreateBlogPage />
-          //       </React.Suspense>
-          //     }
-            />
-          </Route>
-          <Route
-            path="detailblog/:idblog"
-            element={
-              <React.Suspense
-                fallback={
-                  <div>
-                    <Spiner />
-                  </div>
-                }
-              >
-                <DetailBlogPage />
-              </React.Suspense>
-            }
-          />
-        </Route>
         {/* AboutPage */}
         <Route
           path="about"
