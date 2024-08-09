@@ -20,9 +20,9 @@ const NotFound = React.lazy(() => import('./Component/pages/NotFound'));
 const DetailBlogPage = React.lazy(() =>
   import('./Component/pages/DetailBlogPage')
 );
-const CreateBlogPage = React.lazy(() =>
-  import('./Component/pages/CreateBlogPage')
-);
+// const CreateBlogPage = React.lazy(() =>
+//   import('./Component/pages/CreateBlogPage')
+// );
 const BlogPage = React.lazy(() => import('./Component/pages/BlogPage'));
 const ForumPage = React.lazy(() => import('./Component/pages/ForumPage'));
 const CreateForumPage = React.lazy(() =>
