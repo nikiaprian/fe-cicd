@@ -114,21 +114,21 @@ function App() {
                 <BlogPage />
               </React.Suspense>
             }
-          />
-          <Route element={<ProtectedRoute />}>
-            <Route
-              path="createblog"
-              element={
-                <React.Suspense
-                  fallback={
-                    <div>
-                      <Spiner />
-                    </div>
-                  }
-                >
-                  <CreateBlogPage />
-                </React.Suspense>
-              }
+          // />
+          // <Route element={<ProtectedRoute />}>
+          //   <Route
+          //     path="createblog"
+          //     element={
+          //       <React.Suspense
+          //         fallback={
+          //           <div>
+          //             <Spiner />
+          //           </div>
+          //         }
+          //       >
+          //         <CreateBlogPage />
+          //       </React.Suspense>
+          //     }
             />
           </Route>
           <Route
