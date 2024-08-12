@@ -17,6 +17,13 @@ const DetailForumPage = React.lazy(() =>
   import('./Component/pages/DetailForumPage')
 );
 const NotFound = React.lazy(() => import('./Component/pages/NotFound'));
+const DetailBlogPage = React.lazy(() =>
+  import('./Component/pages/DetailBlogPage')
+);
+const CreateBlogPage = React.lazy(() =>
+  import('./Component/pages/CreateBlogPage')
+);
+const BlogPage = React.lazy(() => import('./Component/pages/BlogPage'));
 const ForumPage = React.lazy(() => import('./Component/pages/ForumPage'));
 const CreateForumPage = React.lazy(() =>
   import('./Component/pages/CreateForumPage')
@@ -89,7 +96,54 @@ function App() {
               </React.Suspense>
             }
           />
-          
+        </Route>
+
+        {/* blogPage */}
+        <Route path="blog">
+          <Route
+            index
+            element={
+              <React.Suspense
+                fallback={
+                  <div>
+                    <Spiner />
+                  </div>
+                }
+              >
+                <BlogPage />
+              </React.Suspense>
+            }
+          />
+          <Route element={<ProtectedRoute />}>
+            <Route
+              path="createblog"
+              element={
+                <React.Suspense
+                  fallback={
+                    <div>
+                      <Spiner />
+                    </div>
+                  }
+                >
+                  <CreateBlogPage />
+                </React.Suspense>
+              }
+            />
+          </Route>
+          <Route
+            path="detailblog/:idblog"
+            element={
+              <React.Suspense
+                fallback={
+                  <div>
+                    <Spiner />
+                  </div>
+                }
+              >
+                <DetailBlogPage />
+              </React.Suspense>
+            }
+          />
         </Route>
         {/* AboutPage */}
         <Route

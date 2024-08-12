@@ -20,6 +20,7 @@ function Navbar() {
   };
   const Links = [
     { name: "ForumIn", link: "/forum" },
+    { name: "BlogIn", link: "/blog" },
     { name: "Tentang", link: "/about" },
   ];
 

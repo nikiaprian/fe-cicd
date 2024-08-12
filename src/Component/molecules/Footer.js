@@ -21,6 +21,9 @@ function Footer() {
                 <li>
                   <Link to='/forum' className='inline-block text-base hover:text-orange-500 mb-2'>Forum CodeIn</Link>
                 </li>
+                <li>
+                  <Link to='/blog' className='inline-block text-base hover:text-orange-500 mb-2'>Blog CodeIn</Link>
+                </li>
                 <li>  
                   <Link to='/about' className='inline-block text-base hover:text-orange-500 mb-2'>About CodeIn</Link>
                 </li>
