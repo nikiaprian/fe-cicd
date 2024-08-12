@@ -5,6 +5,7 @@ import Spiner from './Assets/Spinners/Spiner';
 
 //Routing
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
+import AboutPage from './Component/pages/AboutPage';
 import ProfilePage from './Component/pages/ProfilePage';
 import {
   ProtectedRoute,
@@ -88,8 +89,23 @@ function App() {
               </React.Suspense>
             }
           />
-
+          
         </Route>
+        {/* AboutPage */}
+        <Route
+          path="about"
+          element={
+            <React.Suspense
+              fallback={
+                <div>
+                  <Spiner />
+                </div>
+              }
+            >
+              <AboutPage />
+            </React.Suspense>
+          }
+        />
         {/* ProfilePage */}
         <Route
           path="profile"
