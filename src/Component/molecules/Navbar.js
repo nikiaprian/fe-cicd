@@ -22,6 +22,7 @@ function Navbar() {
     { name: "ForumIn", link: "/forum" },
     { name: "BlogIn", link: "/blog" },
     { name: "Tentang", link: "/about" },
+    { name: "FaQ", link: "/faq" },
   ];
 
   useEffect(() => {

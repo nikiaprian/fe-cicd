@@ -28,6 +28,7 @@ const ForumPage = React.lazy(() => import('./Component/pages/ForumPage'));
 const CreateForumPage = React.lazy(() =>
   import('./Component/pages/CreateForumPage')
 );
+const FaqPage = React.lazy(() => import('./Component/pages/FaqPage'));
 const LoginPage = React.lazy(() => import('./Component/pages/LoginPage'));
 const RegisterPage = React.lazy(() => import('./Component/pages/RegisterPage'));
 
@@ -157,6 +158,21 @@ function App() {
               }
             >
               <AboutPage />
+            </React.Suspense>
+          }
+        />
+        {/* FaqPage */}
+        <Route
+          path="faq"
+          element={
+            <React.Suspense
+              fallback={
+                <div>
+                  <Spiner />
+                </div>
+              }
+            >
+              <FaqPage />
             </React.Suspense>
           }
         />

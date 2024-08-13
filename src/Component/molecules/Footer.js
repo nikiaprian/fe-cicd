@@ -27,6 +27,9 @@ function Footer() {
                 <li>  
                   <Link to='/about' className='inline-block text-base hover:text-orange-500 mb-2'>About CodeIn</Link>
                 </li>
+                <li>  
+                  <Link to='/faq' className='inline-block text-base hover:text-orange-500 mb-2'>FaQ CodeIn</Link>
+                </li>
               </ul>
             </div>
             <div className='w-full px-4 mb-12 md:w-1/3 ml-3 '>
