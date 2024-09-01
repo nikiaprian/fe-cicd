@@ -3,7 +3,7 @@ name: CI/CD and Lambda Execution
 on:
   push:
     branches:
-      - prod
+      - main
 
 jobs:
   build-and-push:
@@ -21,8 +21,20 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    # - name: Run Tests
-    #   run: npm test
+    # - name: Install Babel Jest and Dependencies
+    #   run: npm install babel-core@7.0.0-bridge.0 --save-dev
+
+    # - name: Install Babel Jest and Dependencies
+    #   run: npm install --save-dev babel-jest @babel/core @babel/preset-typescript @babel/preset-env
+
+    # - name: Install --save-dev identity-obj-proxy
+    #   run: npm install --save-dev ts-jest @types/jest
+
+    # - name: Install --save-dev identity-obj-proxy
+    #   run: npm install --save-dev jest @testing-library/react @testing-library/jest-dom
+
+    - name: Run Tests
+      run: npm test -- --watchAll=false
 
     - name: Build Docker Image
       run: docker build -t nikiaprian/frontend:latest .
