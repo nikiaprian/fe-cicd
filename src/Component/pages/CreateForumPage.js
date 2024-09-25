@@ -26,7 +26,7 @@ function CreateForumPage() {
     inputTag.forEach((tag) => data.append("tags", tag?.text));
 
     await axios
-      .post("http://docker-alb-be-1310081088.us-west-2.elb.amazonaws.com:9090/forums/new", data, {
+      .post("http://internal-docker-alb-be-623785321.us-west-2.elb.amazonaws.com:9090/forums/new", data, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${token}`,
