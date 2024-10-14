@@ -9,7 +9,7 @@ import validator from "validator";
 import Swal from "sweetalert2";
 //import useAuthStore from "../store/AuthStore";
 const RegisterPage = (props) => {
-  const baseUrl = "http://docker-alb-be-1472254689.us-west-2.elb.amazonaws.com:9090/auth/register";
+  const baseUrl = "http://docker-alb-be-67897166.us-west-2.elb.amazonaws.com:9090/auth/register";
   const navigate = useNavigate();
   const [register, setRegister] = useState({
     email: "",
