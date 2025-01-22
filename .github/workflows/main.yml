@@ -48,6 +48,18 @@ jobs:
     - name: Update apt repositories
       run: sudo apt-get update
 
+    - name: download awscli
+      run: curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+    - name: install unzip
+      run: sudo apt-get install -y unzip
+
+    - name: unzip awscli
+      run: unzip awscliv2.zip
+
+    - name: install unzip
+      run: sudo ./aws/install
+
     - name: Install AWS CLI
       run: sudo apt-get install -y awscli
 
