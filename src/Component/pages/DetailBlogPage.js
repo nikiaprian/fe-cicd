@@ -19,7 +19,7 @@ function DetailBlogPage() {
   const fetchSetComment = useBlogStore((state) => state.fetchSetComment);
   const fetchCommentInput = useBlogStore((state) => state.fetchCommentInput);
   useEffect(() => {
-    fetchBlogId(`http://docker-alb-be-897750170.us-west-2.elb.amazonaws.com:9090/blogs/${idblog}`, key);
+    fetchBlogId(`http://docker-alb-be-1664573111.us-west-2.elb.amazonaws.com:9090/blogs/${idblog}`, key);
     fetchSetComment(idblog);
     //eslint-disable-next-line
   }, [idblog, fetchBlogId, key]);
