@@ -24,7 +24,7 @@ function HomePage() {
           <div className=" flex flex-col items-start gap-5 text-center md:text-left">
             <p className="text-white font-quicksand text-5xl font-bold leading-tight" data-aos="fade-right" data-aos-offset="200" data-aos-delay="500">
               Website untuk membantu{' '}
-              <span className="text-red-500">Programmer</span> menjadi lebih
+              <span className="text-red-500">Niki</span> menjadi lebih
               baik👋
             </p>
             <p data-aos="fade-right" data-aos-offset="200" data-aos-delay="600" className="text-gray-400 text-xl md:max-w-5xl font-poppins">
