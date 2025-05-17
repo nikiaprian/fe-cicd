@@ -29,7 +29,7 @@ function Navbar() {
     if (key != null) {
       const getApiUser = async () => {
         await axios
-          .get("http://docker-alb-be-1664573111.us-west-2.elb.amazonaws.com:9090/user/profile", {
+          .get("http://docker-alb-be-378101252.us-west-2.elb.amazonaws.com:9090/user/profile", {
             headers: {
               "Content-Type": "application/json",
               Authorization: `Bearer ${key}`,
